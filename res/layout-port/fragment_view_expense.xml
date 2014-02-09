@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"    
+    android:scrollbarStyle="insideOverlay"
+    android:background="#FFFFFF"
+     >
+     
+   <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+         >
+         
+       <LinearLayout
+            android:id="@+id/total_expense_amount_spent_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"            
+            android:weightSum="1" >
+        
+        <TextView
+                android:id="@+id/text_total_expense_of_trip"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"                
+                android:gravity="center"
+                android:text="@string/text_total_expense_of_trip"                
+                android:textSize="@dimen/text_size"
+                android:textColor="#000000"
+                 />
+        
+        <TextView
+                android:id="@+id/total_expense_spent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"                
+                android:gravity="center"
+                android:textColor="#00FF00"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_size" />
+        
+        </LinearLayout>
+         
+       <HorizontalScrollView 
+           android:layout_width="match_parent"
+    	   android:layout_height="wrap_content"
+    	   android:id="@+id/horizontal_scroll_layout"
+    	   android:layout_below="@+id/total_expense_amount_spent_layout" 
+           >
+
+        <TableLayout
+            android:id="@+id/view_expense_table"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:background="#66CCCC"
+            android:clickable="false"
+            android:divider="#FF00FF"            
+            android:showDividers="middle" 
+            android:stretchColumns="*"                                                      
+            >
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:showDividers="end" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_span="8"
+                    android:gravity="center"
+                    android:text="@string/view_expense_details_text"
+                    android:textColor="#0000FF"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#FFFF00"
+                android:tag="@string/row_seperator_tag" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:showDividers="end" >
+
+                <TextView          
+                    android:layout_width="wrap_content"          
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center"                    
+                    android:text="@string/view_item_serial_number"
+                    android:textColor="#0000FF"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center"                    
+                    android:text="@string/view_expense_name"
+                    android:textColor="#0000FF"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center"                    
+                    android:text="@string/view_expense_datetime"
+                    android:textColor="#0000FF"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center"                    
+                    android:text="@string/view_expense_amount"
+                    android:textColor="#0000FF"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center"                    
+                    android:text="@string/view_expense_comments"
+                    android:textColor="#0000FF"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center"                    
+                    android:text="@string/view_expense_type"
+                    android:textColor="#0000FF"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center"                    
+                    android:text="@string/view_expense_by"
+                    android:textColor="#0000FF"
+                    android:textStyle="bold" />
+                
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center"                    
+                    android:text="@string/view_sharing_count_text"
+                    android:textColor="#0000FF"
+                    android:textStyle="bold" />              
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#FFFF00"
+                android:tag="@string/row_seperator_tag" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp" />
+            </TableRow>
+        </TableLayout>
+        
+        </HorizontalScrollView>
+        
+
+        <Button
+            android:id="@+id/view_individual_expense_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:layout_below="@+id/horizontal_scroll_layout"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/view_individual_shares_action_text"
+             />
+
+    	</RelativeLayout>    
+
+</ScrollView>

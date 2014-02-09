@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <group android:id="@+id/action_menu" >
+        <item
+            android:id="@+id/expense_edit_menu"
+            android:title="@string/edit_action_menu"/>
+        <item
+            android:id="@+id/expense_delete_menu"
+            android:title="@string/delete_action_menu"/>
+    </group>
+</menu>

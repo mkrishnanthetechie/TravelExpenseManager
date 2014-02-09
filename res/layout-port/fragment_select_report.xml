@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+     >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"        
+        android:orientation="horizontal"
+        android:padding="@dimen/layout_padding" >
+
+        <LinearLayout
+            android:id="@+id/select_report_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="@dimen/layout_padding"
+            android:weightSum="1" >
+
+            <TextView
+                android:id="@+id/select_report_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.30"
+                android:gravity="left"
+                android:text="@string/select_report_text"
+                android:textSize="@dimen/text_size" />
+
+            <Spinner
+                android:id="@+id/select_report"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.70"
+                android:prompt="@string/report_prompt"
+                android:scrollbars="vertical"
+                android:spinnerMode="dialog"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TableLayout
+            android:id="@+id/selected_report"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/select_report_layout"
+            android:layout_margin="2dp"
+            android:background="#66CCCC"
+            android:clickable="false"
+            android:shrinkColumns="*"
+            android:stretchColumns="*" >
+
+            <TableRow
+                android:id="@+id/report_header_row"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:showDividers="end"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center"
+                    android:text="@string/table_trip_name_text"
+                    android:textColor="#0000FF"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center"
+                    android:text="@string/table_start_date_text"
+                    android:textColor="#0000FF"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center"
+                    android:text="@string/table_end_date_text"
+                    android:textColor="#0000FF"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:text="@string/table_person_count_text"
+                    android:textColor="#0000FF"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#FFFF00" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/dynamic_row"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#77CCDD"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/dynamic_trip_name_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center"
+                    android:textColor="#0000FF"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/dynamic_start_date_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center"
+                    android:textColor="#0000FF" />
+
+                <TextView
+                    android:id="@+id/dynamic_end_date_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center"
+                    android:textColor="#0000FF" />
+
+                <TextView
+                    android:id="@+id/dynamic_members_count_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center"
+                    android:textColor="#0000FF" />
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/no_reports_found_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/selected_report"
+            android:gravity="center"            
+            android:text="@string/no_rows_found"
+            android:textColor="#FF0000"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold"            
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/select_report_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/no_reports_found_error"
+            android:layout_centerInParent="true"
+            android:text="@string/go"
+            android:textColor="#000000"
+            android:textSize="@dimen/button_text_size" />
+    </RelativeLayout>
+
+</ScrollView>

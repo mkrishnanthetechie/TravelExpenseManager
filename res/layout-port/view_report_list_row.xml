@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="1"
+    android:background="#66CCCC"
+    android:descendantFocusability="blocksDescendants"    
+     >
+    
+    <TextView 
+        android:id="@+id/view_report_serial_number"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:gravity="center"
+        android:textSize="@dimen/text_size"
+        android:textColor="#0000FF"
+        android:focusable="false"                
+        />
+    
+    <TextView 
+        android:id="@+id/view_report_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.4"
+        android:gravity="center"
+        android:textSize="@dimen/text_size"  
+        android:textColor="#0000FF"
+        android:focusable="false"              
+        />
+    
+    <TextView 
+        android:id="@+id/view_report_period"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3"
+        android:gravity="center"
+        android:textSize="@dimen/text_size"
+        android:textColor="#0000FF"
+        android:focusable="false"                
+        />
+    
+    <TextView 
+        android:id="@+id/view_report_member_count"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:gravity="center"
+        android:textSize="@dimen/text_size"
+        android:textColor="#0000FF"
+        android:focusable="false"
+        />   
+
+</LinearLayout>

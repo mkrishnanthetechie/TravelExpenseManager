@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="@dimen/layout_padding" >
+
+    <RadioGroup
+        android:id="@+id/radio_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"        
+         >
+
+        <RadioButton
+            android:id="@+id/report_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/report_radio_text"
+            android:textColor="#000000" />
+
+        <RadioButton
+            android:id="@+id/expense_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/expense_radio_text"
+            android:textColor="#000000" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/go"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radio_layout"
+        android:layout_centerInParent="true"
+        android:text="@string/go"
+        android:textColor="#000000"
+        android:textSize="@dimen/button_text_size" />
+
+</RelativeLayout>

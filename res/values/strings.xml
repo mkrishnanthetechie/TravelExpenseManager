@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TravelExpenseManager</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <!-- Launcher Activity -->
+    <string name="intro"> Travel Expense Manager will be very useful for maintaining/sharing the travel expenses with friends / families.
+    	Also ,this app maintains the archive of various travel expense so far. Please follow the on-screen menus in the next page to use this app.
+    	Have a blast using this app!!.    </string>
+    <string name="next">Next</string>
+    <string name="add_report">Add</string>
+    <string name="delete_report">Drop</string>
+    <string name="view_report">View</string>
+
+    <!-- Add Type -->
+    <string name="report_radio_text">Report</string>
+    <string name="expense_radio_text">Expense</string>
+    <string name="go">Go</string>
+    <string name="type_error">Please select one action to proceed</string>
+    <!-- End -->
+
+
+    <!-- Select Report -->
+    <string name="select_report_text">Select Report: </string>
+    <string name="table_trip_name_text"> Trip Name </string>
+    <string name="table_start_date_text"> Start Date </string>
+    <string name="table_end_date_text"> End Date </string>
+    <string name="table_person_count_text"> Members count</string>
+    <string name="no_rows_found">You need to add a Report before you proceed with adding expense.</string>
+    <string name="report_prompt">Select Report </string>
+    <!-- End -->
+
+
+    <!-- Add report -->
+    <string name="text_trip_name">Trip / Travel Name: </string>
+    <string name="trip_name_hint">Enter Unique name(Max 15 chars)</string>
+    <string name="start_date_text">Start Date: </string>
+    <string name="end_date_text">End Date: (Optional)</string>
+    <string name="no_of_persons_text">Number of shares</string>
+    <string name="no_of_persons_text_hint">Max 2 digits</string>
+    <string name="date_button_text">Select Date</string>
+
+    <!-- Add Expense -->
+    <string name="text_report_name">Report Name: </string>
+    <string name="text_expense_name">Expense description: </string>
+    <string name="expense_name_hint">(Max 15 chars) </string>
+    <string name="text_expense_by">Expense by: </string>
+    <string name="individual_text">Individual</string>
+    <string name="individual_spinner_tag">individual_expense_spinner</string>
+    <string name="shared_text">Shared</string>
+    <string name="sharing_number_count_text">Sharing count</string>
+    <string name="text_expense_date">Expense date: </string>
+    <string name="time_button_text">Select Time</string>
+    <string name="text_expense_amount">Expense Amount: </string>
+    <string name="expense_amount_hint">(Max 8 digit)</string>
+    <string name="text_expense_comments">Comments if any, </string>
+    <string name="expense_comments_hint">Optional.(Eg: Place/Type of expense). Max 30 chars</string>
+    <string name="sharing_count_tag">sharing_Count_Tag</string>
+    <string name="text_select_name">Person name: </string>
+    <string name="text_person_dialog_prompt">Select A Person </string>
+    <string name="initiate_sharing_button_id">1001</string>
+    <string name="initiate_sharing_button_text">Add</string>
+    <string name="initiate_sharing_button_tag">Add</string>
+    <string name="sharing_count_error">Entered count should not exceed the overall members count. 
+        Please correct the count.</string>
+    <string name="sharing_count_less_than_one">Please click on Individual radio for one person paying the expense.</string>
+    <string name="sharing_count_empty">Please enter the sharing count to proceed</string>
+    <string name="expense_amount_empty">Please enter the Expense amount to proceed</string>
+    <string name="row_seperator_tag">row_seperator_tag</string>
+
+    <!-- Shared Expense Table Headers -->
+    <string name="column_rownum_text">SI No</string>
+    <string name="column_person_name_text">Name</string>
+    <string name="column_amount_text">Amount</string>
+    <!-- End of Table headers -->
+
+
+    <!-- Shared Expense Fragment -->
+    <string name="ok_button_text">OK</string>
+    <string name="shared_expense_amount_hint_text">Person %d amount.</string>
+    <string name="spinner_prompt">Person %d</string>
+    <string name="shared_expense_dialog_title">Shared Expense Details</string>
+    <string name="shared_expense_row_tag">shared_expense_row</string>
+    <string name="duplicate_person_name_error">Two person names cannot be same. Please select different name for Person %d</string>
+    <string name="duplicate_person_count_format">%d Duplicate person names to changed</string>
+    <string name="list_size_exceed_error">Map count exceeded. Cannot add more.</string>
+    <string name="missing_expense_amount_count">Missing %d expense to be entered.</string>
+    <string name="total_expense_not_match_with_cumulative_individual">Total expense amount should match with cumulative individual amount. Discrepency of %f amount</string>
+    <string name="save_button_text">Save Expense</string>
+    <!-- End of Add Expense -->
+
+
+    <!-- View Report -->
+    <string name="view_no_reports_added">There is no report added so far.
+        Please add report before viewing them</string>
+    <string name="view_action_select_report_text">Click on Report below to view Expense</string>
+
+    <!-- View Expense -->
+    <string name="view_item_serial_number">SI No</string>
+    <string name="view_expense_details_text">Expense Details</string>
+    <string name="view_expense_name">Name</string>
+    <string name="view_expense_datetime">Date</string>
+    <string name="view_expense_amount">Amount</string>
+    <string name="view_expense_comments">Comments</string>
+    <string name="view_expense_type">Type</string>
+    <string name="view_expense_by">Given By</string>
+    <string name="view_expense_action">Action</string>
+    <string name="view_sharing_count_text">Sharing\ncount</string>
+    <string name="text_total_expense_of_trip">Total Amount spent so far : </string>
+    <string name="view_individual_shares_action_text">Individual expenses Report</string>
+    <string name="no_expenses_found"> There is no expense done so far in this trip.
+        Please add expense by selecting the required trip. </string>
+
+    <!-- Expense Action Menus -->
+    <string name="edit_action_menu">Edit</string>
+    <string name="delete_action_menu">Delete</string>
+
+    <!-- End of View Expense -->
+
+
+    <!-- Person names -->
+    <string name="textview_format">Person %d</string>
+    <string name="edittext_format">Enter Person %d  Name</string>
+    <string name="add_expense_text">Add Expense</string>
+    <string name="reset">Reset selection</string>
+
+    <!-- View Individual Expense Dialog Items -->
+    <string name="view_type_action_default_text">Day Wise Expense</string>
+    <string name="view_type_action_total_share_text">Total Expense wise</string>
+    <string name="toggle_on_text">ON</string>
+    <string name="toggle_off_text">OFF</string>
+    <string name="expandable_button_text">+</string>
+    <string name="shrink_button_text">-</string>
+    <string name="expandable_listview_tag">day_wise_list</string>
+    <string name="individual_expense_dialog_title">Total Amount Spent — %s</string>
+    <string name="dynamic_text_default">It Works</string>
+    <string name="header_person_name_text">Name</string>
+    <string name="header_total_amount_text">Total spent</string>
+    <string name="header_percentage_text">(%) in Total</string>
+    <string name="total_expense_table_tag">total_wise_list</string>
+    <string name="total_expense_table_rows_populated">Table Populated</string>
+
+    <!-- Default fragment -->
+    <string name="default_text">Click on Action button above to proceed</string>
+
+    <!-- validation errors -->
+    <string name="add_report_error">Please fill up the following fields to proceed.
+        1. Trip Name
+        2. Start date
+        3. Number of shares</string>
+    <string name="duplicate_report">Two reports cannot have same name and start date. Please correct</string>
+    <string name="trip_name_empty">Trip name cannot be empty.</string>
+    <string name="start_date_empty">Start date cannot be empty.</string>
+    <string name="end_date_before_start_date">Trip End Date cannot before start Date. Please select correct end date.</string>
+    <string name="person_count_error">Min value is 1.</string>
+    <string name="person_count_empty">No of Person cannot be empty</string>
+
+    <!-- Add Person Validation errors -->
+    <string name="person_name_empty">Enter all person names to proceed.</string>
+    <string name="missing_person_count">Missing %d names to be filled/changed.</string>
+
+    <!-- Add Expense Validation errors -->
+    <string name="expense_description_empty">Expense Description cannot be empty.</string>
+    <string name="expense_date_empty">Please select expense incurred date.</string>
+    <string name="expense_time_empty">Please select expense incurred time.</string>
+    <string name="expense_date_before_start_date">Expense date cannot before trip start Date. Please select correct expense date.</string>
+    <string name="expense_date_after_end_date">Expense date cannot after trip end Date. Please select correct expense date.</string>
+    <string name="expense_after_today">Expense date cannot be future date.</string>
+    <!-- End of  validation errors -->
+
+
+    <!-- Delete Report -->
+    <string name="delete_report_success">Report deleted.</string>
+    <string name="delete_report_failure">There was an error during deletion</string>
+    <string name="delete_report_confirmation">Are you sure to proceed with delete this report and associated expenses. This action cannot be reverted</string>
+    <string name="action_alert_dialog_title">Confirm </string>
+    <string name="alert_positive_button_text">Proceed</string>
+    <string name="alert_negative_button_text">Cancel</string>
+    <string name="delete_no_reports_added">There is no report added so far.
+        Please add report before deleting it</string>
+
+    <!-- Intent Action Names -->
+    <string-array name="actions">
+        <item>com.krishnan.travelexpensemanager.EXPENSE_HOST_ACTIVITY</item>
+    </string-array>
+
+</resources>

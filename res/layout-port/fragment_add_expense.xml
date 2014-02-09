@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="414dp"
+        android:background="#FFFFFF"
+        android:padding="@dimen/layout_padding"
+        android:scrollbars="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/report_name_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1" >
+
+            <TextView
+                android:id="@+id/text_report_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="left"
+                android:text="@string/text_report_name"
+                android:textSize="@dimen/text_size" />
+
+            <TextView
+                android:id="@+id/report_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center_horizontal"
+                android:textSize="@dimen/text_size" >
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/expense_name_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/report_name_layout"
+            android:weightSum="1" >
+
+            <TextView
+                android:id="@+id/text_expense_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="left"
+                android:text="@string/text_expense_name"
+                android:textSize="@dimen/text_size" />
+
+            <EditText
+                android:id="@+id/expense_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center_horizontal"
+                android:hint="@string/expense_name_hint"
+                android:lines="1"
+                android:maxLength="15"
+                android:minLines="1"
+                android:textSize="@dimen/text_size"
+                android:textColor="#000000" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/expense_date_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/expense_name_layout"
+            android:weightSum="1" >
+
+            <TextView
+                android:id="@+id/expense_date_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:gravity="left"
+                android:text="@string/text_expense_date"
+                android:textSize="@dimen/text_size" />
+
+            <Button
+                android:id="@+id/expense_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.35"
+                android:gravity="center_horizontal"
+                android:text="@string/date_button_text"
+                android:textSize="@dimen/button_text_size"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/expense_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.35"
+                android:gravity="center_horizontal"
+                android:text="@string/time_button_text"
+                android:textSize="@dimen/button_text_size"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/expense_amount_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/expense_date_layout"
+            android:weightSum="1" >
+
+            <TextView
+                android:id="@+id/expense_amount_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="left"
+                android:text="@string/text_expense_amount"
+                android:textSize="@dimen/text_size" />
+
+            <EditText
+                android:id="@+id/expense_amount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center_horizontal"
+                android:hint="@string/expense_amount_hint"
+                android:inputType="numberDecimal"
+                android:maxLength="8"
+                android:maxLines="1"
+                android:textSize="@dimen/text_size"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/expense_comments_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/expense_amount_layout"
+            android:weightSum="1" >
+
+            <TextView
+                android:id="@+id/expense_comments_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.35"
+                android:gravity="left"
+                android:text="@string/text_expense_comments"
+                android:textSize="@dimen/text_size" />
+
+            <EditText
+                android:id="@+id/expense_comments"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.65"
+                android:ems="10"
+                android:gravity="center_horizontal"
+                android:hint="@string/expense_comments_hint"
+                android:inputType="textMultiLine"
+                android:textSize="@dimen/text_size"
+                android:maxLength="30"
+                android:textColor="#000000"
+                 />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/expense_type_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/expense_comments_layout"
+            android:weightSum="1" >
+
+            <TextView
+                android:id="@+id/expense_type_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.70"
+                android:gravity="left"
+                android:text="@string/text_expense_by"
+                android:textSize="@dimen/text_size" />
+
+            <RadioGroup
+                android:id="@+id/expense_by_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.40"
+                android:orientation="vertical" >
+
+                <RadioButton
+                    android:id="@+id/individual"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/individual_text"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/shared"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shared_text"
+                    android:textColor="#000000" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/expense_type_action_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/expense_type_layout"
+            android:weightSum="1"
+            android:visibility="invisible"
+             >
+
+            <TextView
+                android:id="@+id/expense_type_action_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.30"
+                android:gravity="left"
+                android:text="@string/text_select_name"
+                android:textSize="@dimen/text_size" />
+
+            <Spinner
+                android:id="@+id/select_person"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.70"
+                android:prompt="@string/text_person_dialog_prompt"
+                android:scrollbars="vertical"
+                android:spinnerMode="dialog"
+                android:tag="@string/individual_spinner_tag"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TableLayout
+            android:id="@+id/shared_expense_table"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/expense_type_action_layout"
+            android:layout_margin="2dp"
+            android:background="#66CCCC"
+            android:clickable="false"
+            android:shrinkColumns="*"
+            android:stretchColumns="*"
+            android:visibility="invisible"
+             >
+
+<!--             <TableRow
+                android:gravity="center"
+                android:orientation="vertical"
+                android:showDividers="end" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center"
+                    android:text="@string/column_rownum_text"
+                    android:textColor="#0000FF"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center"
+                    android:text="@string/column_person_name_text"
+                    android:textColor="#0000FF"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center"
+                    android:text="@string/column_amount_text"
+                    android:textColor="#0000FF"
+                    android:textStyle="bold" />
+            </TableRow>
+            
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#FFFF00"
+                android:tag="@string/row_seperator_tag" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp" />
+            </TableRow> -->
+        </TableLayout>
+
+        <Button
+            android:id="@+id/save_expense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shared_expense_table"
+            android:layout_centerInParent="true"
+            android:text="@string/save_button_text"
+            android:textColor="#000000"
+            android:textSize="@dimen/button_text_size" />
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/add_report_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"    
+    android:background="#FFFFFF"
+    android:weightSum="1"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/add_report"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.33"
+        android:drawableTop="@drawable/ic_add_report"
+        android:text="@string/add_report"
+        android:textAlignment="center"
+        android:textSize="@dimen/button_text_size"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/delete_report"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.33"
+        android:drawableTop="@drawable/ic_delete_report"
+        android:text="@string/delete_report"
+        android:textAlignment="center"
+        android:textSize="@dimen/button_text_size"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/view_report"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.33"
+        android:drawableTop="@drawable/ic_view_report"
+        android:text="@string/view_report"
+        android:textAlignment="textStart"
+        android:textSize="@dimen/button_text_size"
+        android:textColor="#000000" />
+
+</LinearLayout>

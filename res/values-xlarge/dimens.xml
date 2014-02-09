@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="button_text_size">55sp</dimen>
+    <dimen name="text_size">45sp</dimen>
+    
+    <dimen name="bottom_margin">25dp</dimen>
+    <dimen name="image_padding">3dp</dimen>
+    
+    <dimen name="layout_padding">5dp</dimen>
+    <dimen name="add_expense_margin_bottom">64dp</dimen>
+    <dimen name="add_expense_margin_left">62dp</dimen>
+    
+    
+</resources>

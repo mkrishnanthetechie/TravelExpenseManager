@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:id="@+id/person_layout" >
+
+    
+    <Button
+        android:id="@+id/add_expense"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="@dimen/add_expense_margin_bottom"
+        android:layout_marginLeft="@dimen/add_expense_margin_left"
+        android:text="@string/add_expense_text" />
+    
+    <Button
+        android:id="@+id/reset"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/add_expense"
+        android:layout_alignBaseline="@+id/add_expense"
+        android:text="@string/reset" />
+    
+
+</RelativeLayout>
